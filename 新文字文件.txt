@@ -1,0 +1,70 @@
+const byte LEDs[] = {2,3,4,5,8,9,10,11};
+const byte total = sizeof(LEDs);
+byte index = 0;
+void setup(){
+
+for (byte i=0;i<total;i++) {
+pinMode(LEDs[i], OUTPUT);
+}
+}
+void loop() {
+
+for (byte i=0;i<total;i++) {
+pinMode(LEDs[i], LOW);
+}
+
+
+for (byte i=0;i<total;i++) {
+pinMode(LEDs[i], HIGH);
+  delay(200);
+   pinMode(LEDs[i], LOW);
+}
+  for (byte i=0;i<total;i++) {
+pinMode(LEDs[i], HIGH);
+    
+}
+  delay(200);
+  for (byte i=0;i<total;i++) {
+pinMode(LEDs[i], LOW);
+}
+  delay(200);
+  for (byte i=0;i<total;i++) {
+pinMode(LEDs[i], HIGH);
+    
+}
+  delay(200);
+   for (byte i=0;i<total;i++) {
+pinMode(LEDs[i], LOW);
+}
+  delay(200);
+  for (byte i=7;i>0;i--) {
+pinMode(LEDs[i], HIGH);
+  delay(200);
+   pinMode(LEDs[i], LOW);
+}
+  pinMode(LEDs[0], HIGH);
+  delay(200);
+  pinMode(LEDs[0], LOW);
+  delay(200);
+  for (byte i=0;i<total;i++) {
+pinMode(LEDs[i], HIGH);
+}
+  for (byte i=0;i<total;i++) {
+pinMode(LEDs[i], HIGH);
+    
+}
+  delay(200);
+  for (byte i=0;i<total;i++) {
+pinMode(LEDs[i], LOW);
+}
+  delay(200);
+  for (byte i=0;i<total;i++) {
+pinMode(LEDs[i], HIGH);
+    
+}
+  delay(200);
+   for (byte i=0;i<total;i++) {
+pinMode(LEDs[i], LOW);
+}
+  delay(200);
+}
